@@ -100,7 +100,7 @@ div.campo > input {
     border: none;
     border-radius: 10px;
     padding: 4px;
-    transform: translateY(-7px);
+    transform: translateY(-7.5px);
     text-indent: 8px;   
 }
 
