@@ -1,1 +1,0 @@
-Este arquivo é apenas para teste, aprenda mais sobre programação para complementar seus arquivos HTML ;)

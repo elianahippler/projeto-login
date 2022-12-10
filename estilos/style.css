@@ -31,7 +31,6 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 
     background: linear-gradient(to bottom, transparent , var(--bege));
@@ -42,6 +41,7 @@ section#login{
     border-radius: 20px;
     box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.411);
 
+    transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
@@ -66,9 +66,9 @@ div#formulario > h1{
 }
 
 div#formulario > p{
+    font-size: 0.8em;
     padding-bottom: 10px;
     padding-top: 6px;
-    font-size: 0.8em;
 }
 
 form > div.campo{
@@ -84,34 +84,31 @@ label{
     display: none;
 }
 
-#simbolo{   
+div.campo > span{   
     color:rgba(255, 255, 255, 0.692);
-    font-size: 25px;
-    padding-top: 8px;
-    padding-left: 10px;
+    font-size: 28px;
+    width: 40px;
+    padding: 5px;
+    padding-left: 11px;
 }
 
-input[type=password], input[type=email] {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-62%, -88%);
-
-    text-indent: 8px;
-    border-radius: 10px;
-    font-size: 0.7em;
+div.campo > input {
     background-color: rgba(255, 255, 255, 0.692);
-    width: 81%;
-    height: 75%;
+    font-size: 0.8em;
+    width: calc(100% - 48px);
+    height: 79%;
     border: none;
-    padding-top: 2px;
+    border-radius: 10px;
+    padding: 4px;
+    transform: translateY(-7px);
+    text-indent: 8px;   
 }
 
-input[type=password], input[type=email]:hover {
-    border: none;
+div.campo > input:focus-within {
+    background-color: white;
 }
 
-.entrar > input[type=submit]{
+form > input[type=submit]{
     display: block;
     font-size: 0.9em;
     width: 100%;
@@ -121,33 +118,33 @@ input[type=password], input[type=email]:hover {
     border: none;
     border-radius: 12px;
     cursor: pointer;
-    margin-bottom: 5px;
 }
 
-.entrar > input[type=submit]:hover{
+form > input[type=submit]:hover{
     background-image: linear-gradient(to right, #051c3be3, #865c8be3);
 }
 
-.esqueci > a {
-    padding-top: 9px;
-    text-decoration: none;
+form > a.botao {
+    display: block;
     text-align: center;
     font-size: 0.7em;
-    display: block;
     width: 100%;
     height: 40px;
+    padding-top: 9px;
+    margin-top: 5px;
     background-color: rgba(255, 255, 255, 0.692);
+    color: black;
     border: none;
     border-radius: 12px;
+    text-decoration: none;
     cursor: pointer;
-    color: black;
     text-shadow: none;
 }
 
-.esqueci > a:hover {
+form > a.botao:hover {
     background-color: rgba(255, 255, 255, 0.37);
 }
 
-form > .esqueci > a> span{
-    font-size: 1.2em
+form > a.botao > span{
+    font-size: 0.8em
 }
