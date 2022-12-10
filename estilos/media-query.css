@@ -26,6 +26,12 @@
     section#login > div#formulario{
         float: right;
         width: 70%; 
+        padding-top: 100px;
+    }
+
+    input[type=password], input[type=email] {   
+        transform: translate(-56%, -88%);
+        width: 88%;
     }
 }
 
@@ -55,5 +61,10 @@
     
     div#formulario > p{
         font-size: 1.2em;
+    }
+
+    input[type=password], input[type=email] {   
+        transform: translate(-54.5%, -88%);
+        width: 91%;
     }
 }
