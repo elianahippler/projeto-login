@@ -52,7 +52,7 @@
     }
 
     form > div.campo{
-        background-image: linear-gradient(to right, #051c3bc0, #865c8bc0);
+        background-image: linear-gradient(to right, var(--roxo), var(--rosa), var(--bege));
     }
 
     div#formulario > h1{
